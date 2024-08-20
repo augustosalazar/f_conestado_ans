@@ -20,6 +20,7 @@ class ColorSelectionPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
           title: const Text('Color palette app'),
           actions: [
             IconButton(onPressed: showDialog, icon: Icon(Icons.info_outline))
